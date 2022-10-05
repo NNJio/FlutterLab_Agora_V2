@@ -38,6 +38,7 @@ dependencies:
   agora_rtc_engine: ^5.2.0
   permission_handler: ^10.0.2
   agora_uikit: ^1.0.4
+  pip_view: ^0.9.7
 
 dev_dependencies:
   flutter_test:

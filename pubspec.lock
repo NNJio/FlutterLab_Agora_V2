@@ -191,6 +191,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.1.0"
+  pip_view:
+    dependency: "direct main"
+    description:
+      name: pip_view
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.9.7"
   plugin_platform_interface:
     dependency: transitive
     description:

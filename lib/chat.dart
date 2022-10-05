@@ -1,7 +1,6 @@
 import 'package:agora/video_call.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
 
 import 'message.dart';
 import 'message_test_field.dart';
@@ -14,7 +13,7 @@ class ChatScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Chat'),
+        title: const Text('Chat'),
         actions: [
           IconButton(
               onPressed: () => Navigator.of(context).push(

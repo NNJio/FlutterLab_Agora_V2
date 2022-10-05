@@ -1,6 +1,7 @@
+
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class MyWidget extends StatefulWidget {
   const MyWidget({super.key});
@@ -14,9 +15,9 @@ class _MyWidgetState extends State<MyWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('TestMode'),
+          title: const Text('TestMode'),
         ),
-        body: MaterialApp(
+        body: const MaterialApp(
           title: 'Agora Video Calling',
           debugShowCheckedModeBanner: false,
         ));
