@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'chat.dart';
-
+import 'screens/chat.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,8 +9,9 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+  //! This widget is the root of your application.
   @override
+  
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Agora Video Calling',
@@ -28,23 +28,8 @@ class MyApp extends StatelessWidget {
           iconTheme: IconThemeData(color: Colors.black),
         ),
       ),
-      // builder: (_, child) => _Unfocus(child: child!),
       home: const ChatScreen(),
       // home: HomeScreen(),
-      
     );
   }
 }
-
-// class _Unfocus extends StatelessWidget {
-//   const _Unfocus({Key? key, required this.child}) : super(key: key);
-//   final Widget child;
-//   @override
-//   Widget build(BuildContext context) {
-//     return GestureDetector(
-//       behavior: HitTestBehavior.opaque,
-//       onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
-//       child: child,
-//     );
-//   }
-// }

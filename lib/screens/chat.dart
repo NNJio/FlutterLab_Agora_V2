@@ -1,9 +1,9 @@
-import 'package:agora/video_call.dart';
+import 'package:agora/screens/video_call.dart';
 import 'package:flutter/material.dart';
 
 
-import 'message.dart';
-import 'message_test_field.dart';
+import '../models/message.dart';
+import '../models/message_test_field.dart';
 
 
 class ChatScreen extends StatelessWidget {
