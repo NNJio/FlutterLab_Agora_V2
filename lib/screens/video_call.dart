@@ -15,9 +15,9 @@ class _VideoCallScreenState extends State<VideoCallScreen> {
   final AgoraClient _client = AgoraClient(
       agoraConnectionData: AgoraConnectionData(
           appId: '9fd8b7df312a40df8986f39bd3b45cd5',
-          channelName: 'Test',
+          channelName: 'User1',
           tempToken:
-              '007eJxTYKjfuv6haE3k9kTLrNCFNtwOIm8nG66YXfDt69K9yh+Pn+lVYLBMS7FIMk9JMzY0SjQxSEmzsLQwSzO2TEoxTjIxTU4xlRa0SZ6VZJusUVHEwsgAgSA+C0NIanEJAwMApAQhFQ=='));
+              '007eJxTYHh/6cbltXs4Q30kq/PWudtYqc/iD+fv2RpXEZg4Obnb9acCg2VaikWSeUqasaFRoolBSpqFpYVZmrFlUopxkolpcorp8q3OyZrsrsmrLeqYGBkgEMRnZQgtTi0yZGAAAEI2Hw0='));
   Future<void> _initAgora() async {
     await _client.initialize();
   }
