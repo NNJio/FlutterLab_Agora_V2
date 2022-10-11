@@ -33,8 +33,31 @@ PODS:
   - AgoraRtcEngine_iOS/VideoPreprocess (3.7.0.3)
   - AgoraRtcEngine_iOS/VirtualBackground (3.7.0.3)
   - AgoraRtm_iOS (1.4.10)
+  - Cache (6.0.0)
   - Flutter (1.0.0)
+  - GCDWebServer (3.5.4):
+    - GCDWebServer/Core (= 3.5.4)
+  - GCDWebServer/Core (3.5.4)
+  - HLSCachingReverseProxyServer (0.1.0):
+    - GCDWebServer (~> 3.5)
+    - PINCache (>= 3.0.1-beta.3)
+  - path_provider_ios (0.0.1):
+    - Flutter
   - permission_handler_apple (9.0.4):
+    - Flutter
+  - PINCache (3.0.3):
+    - PINCache/Arc-exception-safe (= 3.0.3)
+    - PINCache/Core (= 3.0.3)
+  - PINCache/Arc-exception-safe (3.0.3):
+    - PINCache/Core
+  - PINCache/Core (3.0.3):
+    - PINOperation (~> 1.2.1)
+  - PINOperation (1.2.1)
+  - pip_flutter (0.0.3):
+    - Cache (~> 6.0.0)
+    - Flutter
+    - HLSCachingReverseProxyServer
+  - wakelock (0.0.1):
     - Flutter
 
 DEPENDENCIES:
@@ -42,13 +65,21 @@ DEPENDENCIES:
   - agora_rtm (from `.symlinks/plugins/agora_rtm/ios`)
   - agora_uikit (from `.symlinks/plugins/agora_uikit/ios`)
   - Flutter (from `Flutter`)
+  - path_provider_ios (from `.symlinks/plugins/path_provider_ios/ios`)
   - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
+  - pip_flutter (from `.symlinks/plugins/pip_flutter/ios`)
+  - wakelock (from `.symlinks/plugins/wakelock/ios`)
 
 SPEC REPOS:
   trunk:
     - AgoraIrisRTC_iOS
     - AgoraRtcEngine_iOS
     - AgoraRtm_iOS
+    - Cache
+    - GCDWebServer
+    - HLSCachingReverseProxyServer
+    - PINCache
+    - PINOperation
 
 EXTERNAL SOURCES:
   agora_rtc_engine:
@@ -59,8 +90,14 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/agora_uikit/ios"
   Flutter:
     :path: Flutter
+  path_provider_ios:
+    :path: ".symlinks/plugins/path_provider_ios/ios"
   permission_handler_apple:
     :path: ".symlinks/plugins/permission_handler_apple/ios"
+  pip_flutter:
+    :path: ".symlinks/plugins/pip_flutter/ios"
+  wakelock:
+    :path: ".symlinks/plugins/wakelock/ios"
 
 SPEC CHECKSUMS:
   agora_rtc_engine: 47e0ddc177bae1b85eb00d01a0ea546d87ce0b8b
@@ -69,8 +106,16 @@ SPEC CHECKSUMS:
   AgoraIrisRTC_iOS: d802443ae16f043e7b2805c978880eb62ee8154c
   AgoraRtcEngine_iOS: 549bb3853d5afb18fabca4197786f39f31141da8
   AgoraRtm_iOS: 95e7070466f42a6494435a7f39fd2b13fc143cbf
+  Cache: 4ca7e00363fca5455f26534e5607634c820ffc2d
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
+  HLSCachingReverseProxyServer: 59935e1e0244ad7f3375d75b5ef46e8eb26ab181
+  path_provider_ios: 14f3d2fd28c4fdb42f44e0f751d12861c43cee02
   permission_handler_apple: 44366e37eaf29454a1e7b1b7d736c2cceaeb17ce
+  PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
+  PINOperation: 00c935935f1e8cf0d1e2d6b542e75b88fc3e5e20
+  pip_flutter: ab714aa0773b07b3e8c41a5ab314c8e22fd53c25
+  wakelock: d0fc7c864128eac40eba1617cb5264d9c940b46f
 
 PODFILE CHECKSUM: ef19549a9bc3046e7bb7d2fab4d021637c0c58a3
 

@@ -46,7 +46,7 @@ import 'package:pip_flutter/pipflutter_player_data_source_type.dart';
 void main() {
   runApp(const MyApp());
 }
-
+//! หลัก 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -63,6 +63,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+//! หน้าแรกและปุ่มกดกลางจอ
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
 
@@ -103,7 +104,10 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
+//! หลังจากกดปุ่นมาหน้า result
 class PictureInPicturePage extends StatefulWidget {
+  const PictureInPicturePage({super.key});
+
   @override
   _PictureInPicturePageState createState() => _PictureInPicturePageState();
 }
@@ -114,11 +118,15 @@ class _PictureInPicturePageState extends State<PictureInPicturePage> {
 
   @override
   void initState() {
+
+    //! กำหนดการตั้งค่า
     PipFlutterPlayerConfiguration pipFlutterPlayerConfiguration =
         const PipFlutterPlayerConfiguration(
       aspectRatio: 16 / 9,
       fit: BoxFit.contain,
     );
+
+    //! กำหนดประเภทที่ต้องการทำ PIP
     PipFlutterPlayerDataSource dataSource = PipFlutterPlayerDataSource(
       PipFlutterPlayerDataSourceType.network,
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
@@ -142,6 +150,7 @@ class _PictureInPicturePageState extends State<PictureInPicturePage> {
       ),
       body: Column(
         children: [
+          //! Result Video
           const SizedBox(height: 20),
           Flexible(
             flex: 1,
